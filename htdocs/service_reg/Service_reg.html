@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Services Registration Form </title>
+    <link rel="stylesheet" href="responsiveRegistration.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Register Your Service</div>
+    <div class="content">
+      <form action="submit.php" method="post">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Price List:</span> 
+      <input type="text" name="price_list" id="price_list" required> 
+          </div>
+
+          <div class="input-box">
+            <span class="details">Area:</span>
+            <input type="text" name="area" id="area" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Time:</span>
+            <input type="text" name="time" id="time" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Milk (Cow/Buffalo):</span>
+            <select name="milk" id="milk" required>
+              <option value="cow">Cow</option>
+              <option value="buffalo">Buffalo</option>
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Amount (Fixed/Monthly):</span>
+            <select name="amount" id="amount" required>
+              <option value="fixed">Fixed</option>
+              <option value="monthly">Monthly</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
